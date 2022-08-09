@@ -12,20 +12,6 @@ async function handleLikedClick (like: boolean) {
     // 조건에 return 또는 throw(에러를 던지지않으면) 해주지 않으면 try{}문
     // 내부에 불필요한 요청을 함
 
-
-// 추가로 위처럼 작성하는 것 보다는
-// 에러함수를 따로 빼서 함수를 분리하는게 더 좋다고 생각함
-
-function handleError () {
-    if (!user) return toast.error('로그인이 필요합니다.')
-}
-
-<button onClick={() => {
-    handleError()
-    handleLikedClick()
-}} />
-
-
 // 2. default value
 function createCarousel(options){
     options = options || {};
