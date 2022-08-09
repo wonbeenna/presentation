@@ -5,15 +5,16 @@ const arr: string[] = ['1000', '2000', '3000']
 const newArrForEach = arr.forEach(function (el){
     return el + '원'
 })
+// undefined
 
 // 매 요소마다 콜백함수를 호출한 결과를 모아 배열로 리턴
 const newArrMap = arr.map(function (el){
     return el + '원'
 })
+// 배열
 
 console.log(newArrForEach)
 console.log(newArrMap)
-
 
 
 // 2. 배열요소 접근하기
@@ -43,7 +44,8 @@ enum BusinessType {
 const userdata = {
     type: BusinessType.listed
 }
-
+// Look up table
+// 키와 밸류로 나열된 JSON과 비슷한 형태
 function getBusinessType(type: BusinessType) {
     // switch (type) {
     //   case BusinessType.individual:
